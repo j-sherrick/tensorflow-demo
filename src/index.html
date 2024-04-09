@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="scss/styles.scss">
+      <title>Google AI for TypeScript Developers</title>
+   </head>
+   <body>
+      <header class="flex container-lg centered">
+         <a href="./index.html">
+            <h1>Google AI with TensorFlow.js</h1>
+         </a>
+         <nav class="links">
+            <a href="./index.html">Smart Cam</a>
+         </nav>
+      </header>
+
+      <div class="smart-cam container-lg centered flex flex-column gap-2">
+         <div id="overlay" class="smart-cam__webcam">
+            <video id="webcam" autoplay></video>
+         </div>
+         <div class="smart-cam__menu">
+            <menu id="controls">
+               <button></button>
+            </div>
+         </div>
+      </div>
+      <script type="module" src="scripts/index.ts"></script>
+   </body>
+</html>

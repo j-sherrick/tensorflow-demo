@@ -1,0 +1,24 @@
+.smart-cam {
+
+   video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; // Ensures video covers the area, adjust as needed
+      background-color: white;
+      border-radius: .5rem;
+   }
+   
+   menu {
+      
+      button {
+         padding: 0.5rem 1rem;
+         border: 1px solid black;
+         width: 100%;
+         height: 3rem;
+         border-radius: .5rem;
+      }
+   }
+}

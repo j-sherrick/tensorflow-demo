@@ -7,25 +7,49 @@
       <title>Google AI for TypeScript Developers</title>
    </head>
    <body>
-      <header class="flex container-lg centered">
+      <header>
          <a href="./index.html">
-            <h1>Google AI with TensorFlow.js</h1>
+            <span>TensorFlow</span>
+            <span>Toy</span>
          </a>
-         <nav class="links">
-            <a href="./index.html">Smart Cam</a>
-         </nav>
       </header>
 
-      <div class="smart-cam container-lg centered flex flex-column gap-2">
-         <div id="overlay" class="smart-cam__webcam">
-            <video id="webcam" autoplay></video>
-         </div>
-         <div class="smart-cam__menu">
-            <menu id="controls">
-               <button></button>
+      <main id="tft-app">
+
+         <section id="tft-app-home" class="container-lg centered">
+            <div class="home-cta">
+               <h1 class="home-cta__title">
+                  <span>TensorFlow</span>
+                  <span>Toy</span>
+               </h1>
+               <p class="home-cta__tagline">Take selfies with over 10 TensorFlow powered effects!</p>
+               <button id="home-cta-start" class="home-cta__start">Ready? Get Started!</button>
+            </div>
+         </section>
+
+         <section id="tft-app-enable">
+            <div id="tft-enable-prompts">
+               <p id="request">Press the button to load&nbsp;the&nbsp;model and access your&nbsp;camera</p>
+               <p id="request-error">Please try again!</p>
+               <p id="request-access">Please allow access!</p>
+               <p id="request-access-above">
+                  "Allow access from the menu&nbsp;above"
+               </p>
+               <p id="request-error-incapable">Sorry, TensorFlow Toy does not work in this web&nbsp;browser</p>
+               <p id="request-error-fatal">Sorry, there was a problem.</p>
+               <p id="request-loading">Loading...</p>
             </div>
          </div>
-      </div>
+
+         <section id="tft-app-main">
+            <canvas id="tft-overlay" class="tft__webcam"></canvas>
+            <video id="webcam" autoplay></video>
+         </section>
+      </main>
+      
+      <footer>
+         
+      </footer>
       <script type="module" src="scripts/index.ts"></script>
    </body>
 </html>

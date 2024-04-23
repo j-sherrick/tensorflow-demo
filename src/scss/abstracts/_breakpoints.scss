@@ -1,0 +1,22 @@
+@use "sass:map";
+
+$breakpoints: (
+    'xs': 0,
+    'sm': 30rem,
+    'md': 45rem,
+    'lg': 60rem,
+    'xl': 75rem
+);
+
+@mixin breakpoint($bp: 0) {
+    @if map.has-key($breakpoints, $bp) {
+        @media screen and (map-get($breakpoints, $bp) <= width) {
+            @content;
+        }
+    }
+    @else {
+        @media screen and ($bp <= width) {
+            @content;
+        }
+    }
+}

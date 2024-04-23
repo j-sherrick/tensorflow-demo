@@ -3,6 +3,8 @@ This project is a simple demonstration of using TensorFlow.js's Face landmark de
 
 ## TODO
 
+This project is a work in progress...
+
 - [ ] Improve this README
 - [ ] Update CSS ID's and class names for components
 - [ ] Improve component styling

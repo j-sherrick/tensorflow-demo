@@ -1,10 +1,15 @@
-# TensorFlow Demo
-This project is a simple demonstration of using TensorFlow.js to detect objects in images. It uses the COCO-SSD model for object detection.
+# TensorFlow Toy
+This project is a simple demonstration of using TensorFlow.js's Face landmark detection to acheive simple SnapChat-like filters in the browser, allowing the user to take a snapshot and save the end result.
 
-## SmartCam
-The main class in this project is `SmartCam`, which is defined in `src/scripts/smartcam.ts`. This class uses a video feed from a webcam, a button to start the object detection, and an overlay to display the detected objects.
+## TODO
 
-The `SmartCam` class has several methods for enabling the webcam, loading the TensorFlow model, detecting objects in the video feed, and displaying the detected objects on the overlay.
+- [ ] Improve this README
+- [ ] Update CSS ID's and class names for components
+- [ ] Improve component styling
+- [ ] Get webcam stream and display it back to the user
+- [ ] Get webcam stream and display it back to the user
+
+
 
 ## Installation
 To install the project, run:

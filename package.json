@@ -1,7 +1,7 @@
 {
-  "name": "tensorflow-demo",
+  "name": "tensorflow-toy",
   "version": "1.0.0",
-  "description": "A simple demo of using TensorFlow.js to detect objects in images",
+  "description": "A demo of using TensorFlow.js to acheive advanced filter effects similar to Snapchat filters.",
   "type": "module",
   "scripts": {
     "build:sass": "sass --watch src/scss:dist/assets/css",

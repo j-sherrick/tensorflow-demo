@@ -7,6 +7,7 @@
       <title>Google AI for TypeScript Developers</title>
    </head>
    <body>
+      
       <header>
          <a href="./index.html">
             <span>TensorFlow</span>
@@ -14,40 +15,39 @@
          </a>
       </header>
 
-      <main class="app">
 
-         <section class="home">
-            <div class="cta">
-               <h1 class="cta__title">
-                  <span>TensorFlow</span>
-                  <span class="cta__title--big">Toy</span>
-               </h1>
-               <p class="cta__tagline">Take selfies with over 10 TensorFlow powered effects!</p>
-               <button class="cta__start">Ready? Get Started!</button>
-            </div>
-         </section>
-
-         <section class="enable">
-            <div class="enable__prompts">
-               <p class="enable__prompt">Press the button to load&nbsp;the&nbsp;model and access your&nbsp;camera</p>
-               <p class="enable__prompt enable__prompt--error">Please try again!</p>
-               <p class="enable__prompt enable__prompt--access">Please allow access!</p>
-               <p class="enable__prompt enable__prompt--access-above">"Allow access from the menu&nbsp;above"</p>
-               <p class="enable__prompt enable__prompt--error-incapable">Sorry, TensorFlow Toy does not work in this web&nbsp;browser</p>
-               <p class="enable__prompt enable__prompt--error-fatal">Sorry, there was a problem.</p>
-               <p class="enable__prompt enable__prompt--loading">Loading...</p>
-            </div>
+      <section class="home">
+         <div class="cta">
+            <h1 class="cta__title">
+               <span>TensorFlow</span>
+               <span class="cta__title--big">Toy</span>
+            </h1>
+            <p class="cta__tagline">Take selfies with over 10 TensorFlow powered effects!</p>
+            <button class="cta__start">Ready? Get Started!</button>
          </div>
+      </section>
 
-         <section class="main">
-            <canvas class="overlay"></canvas>
-            <video class="webcam" autoplay></video>
-         </section>
+      <section class="enable">
+         <div class="enable__prompts">
+            <p class="enable__prompt">Press the button to load&nbsp;the&nbsp;model and access your&nbsp;camera</p>
+            <p class="enable__prompt enable__prompt--error">Please try again!</p>
+            <p class="enable__prompt enable__prompt--access">Please allow access!</p>
+            <p class="enable__prompt enable__prompt--access-above">"Allow access from the menu&nbsp;above"</p>
+            <p class="enable__prompt enable__prompt--error-incapable">Sorry, TensorFlow Toy does not work in this web&nbsp;browser</p>
+            <p class="enable__prompt enable__prompt--error-fatal">Sorry, there was a problem.</p>
+            <p class="enable__prompt enable__prompt--loading">Loading...</p>
+         </div>
+      </section>
+
+      <main class="app">
+         <canvas class="overlay"></canvas>
+         <video class="webcam" autoplay></video>
       </main>
       
       <footer>
          
       </footer>
+
       <script type="module" src="scripts/index.ts"></script>
    </body>
 </html>

@@ -28,22 +28,20 @@
          </section>
 
          <section class="enable">
-            <div id="enable__prompt">
-               <p id="request">Press the button to load&nbsp;the&nbsp;model and access your&nbsp;camera</p>
-               <p id="request-error">Please try again!</p>
-               <p id="request-access">Please allow access!</p>
-               <p id="request-access-above">
-                  "Allow access from the menu&nbsp;above"
-               </p>
-               <p id="request-error-incapable">Sorry, TensorFlow Toy does not work in this web&nbsp;browser</p>
-               <p id="request-error-fatal">Sorry, there was a problem.</p>
-               <p id="request-loading">Loading...</p>
+            <div class="enable__prompts">
+               <p class="enable__prompt">Press the button to load&nbsp;the&nbsp;model and access your&nbsp;camera</p>
+               <p class="enable__prompt enable__prompt--error">Please try again!</p>
+               <p class="enable__prompt enable__prompt--access">Please allow access!</p>
+               <p class="enable__prompt enable__prompt--access-above">"Allow access from the menu&nbsp;above"</p>
+               <p class="enable__prompt enable__prompt--error-incapable">Sorry, TensorFlow Toy does not work in this web&nbsp;browser</p>
+               <p class="enable__prompt enable__prompt--error-fatal">Sorry, there was a problem.</p>
+               <p class="enable__prompt enable__prompt--loading">Loading...</p>
             </div>
          </div>
 
-         <section id="tft-app-main">
-            <canvas id="tft-overlay" class="tft__webcam"></canvas>
-            <video id="webcam" autoplay></video>
+         <section class="main">
+            <canvas class="overlay"></canvas>
+            <video class="webcam" autoplay></video>
          </section>
       </main>
       

@@ -1,12 +1,12 @@
 @use 'variables' as v;
 
 :root {
-      --tft-primary: v.$orange-wheel;
-      --tft-secondary: v.$prussian-blue;
-      --tft-success: v.$spring-green;
-      --tft-warning: v.$xanthous;
-      --tft-error: v.$fire-engine-red;
-      --tft-light: v.$vanilla;
-      --tft-dark: v.$charcoal;
+      --tft-color-primary: v.$orange-wheel;
+      --tft-color-secondary: v.$prussian-blue;
+      --tft-color-success: v.$spring-green;
+      --tft-color-warning: v.$xanthous;
+      --tft-color-error: v.$fire-engine-red;
+      --tft-color-light: v.$vanilla;
+      --tft-color-dark: v.$charcoal;
       // --tft-info: v.$info;
 }

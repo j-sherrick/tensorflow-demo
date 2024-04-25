@@ -14,7 +14,13 @@
    flex-direction: column;
 }
 
-.centered {
+.flex-column-centered {
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.margin-centered {
    margin-inline: auto;
 }
 

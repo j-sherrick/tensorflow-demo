@@ -1,12 +1,49 @@
-@use 'variables' as v;
+$rose: hsla(333, 93%, 56%, 1);
+$grape: hsla(276, 91%, 38%, 1);
+$zaffre: hsla(258, 86%, 34%, 1);
+$neon-blue: hsla(229, 83%, 60%, 1);
+$vivid-sky-blue: hsla(194, 85%, 62%, 1);
 
 :root {
-      --tft-color-primary: v.$orange-wheel;
-      --tft-color-secondary: v.$prussian-blue;
-      --tft-color-success: v.$spring-green;
-      --tft-color-warning: v.$xanthous;
-      --tft-color-error: v.$fire-engine-red;
-      --tft-color-light: v.$vanilla;
-      --tft-color-dark: v.$charcoal;
-      // --tft-info: v.$info;
+   --clr-primary-100: hsla(333, 93%, 86%, 1);
+   --clr-primary-200: hsla(333, 93%, 76%, 1);
+   --clr-primary-300: hsla(333, 93%, 66%, 1);
+   --clr-primary-400: hsla(333, 93%, 56%, 1);
+   --clr-primary-500: hsla(333, 93%, 46%, 1);
+   --clr-primary-600: hsla(333, 93%, 36%, 1);
+   --clr-primary-700: hsla(333, 93%, 26%, 1);
+   --clr-primary-800: hsla(333, 93%, 16%, 1);
+   --clr-primary-900: hsla(333, 93%, 6%, 1);
+
+
+   --clr-secondary-100: hsla(229, 83%, 90%, 1);
+   --clr-secondary-200: hsla(229, 83%, 80%, 1);
+   --clr-secondary-300: hsla(229, 83%, 70%, 1);
+   --clr-secondary-400: hsla(229, 83%, 60%, 1);
+   --clr-secondary-500: hsla(229, 83%, 50%, 1);
+   --clr-secondary-600: hsla(229, 83%, 40%, 1);
+   --clr-secondary-700: hsla(229, 83%, 30%, 1);
+   --clr-secondary-800: hsla(229, 83%, 20%, 1);
+   --clr-secondary-900: hsla(229, 83%, 10%, 1);
+
+   --clr-accent-100: hsla(276, 91%, 88%, 1);
+   --clr-accent-200: hsla(276, 91%, 78%, 1);
+   --clr-accent-300: hsla(276, 91%, 58%, 1);
+   --clr-accent-400: hsla(276, 91%, 38%, 1);
+   --clr-accent-500: hsla(276, 91%, 30%, 1);
+   --clr-accent-600: hsla(276, 91%, 20%, 1);
+   --clr-accent-700: hsla(276, 91%, 10%, 1);
+
+   --clr-neutral-100: hsl(0, 0%, 90%, 1);
+   --clr-neutral-200: hsl(0, 0%, 80%, 1);
+   --clr-neutral-300: hsl(0, 0%, 70%, 1);
+   --clr-neutral-400: hsl(0, 0%, 60%, 1);
+   --clr-neutral-500: hsl(0, 0%, 50%, 1);
+   --clr-neutral-600: hsl(0, 0%, 40%, 1);
+   --clr-neutral-700: hsl(0, 0%, 30%, 1);
+   --clr-neutral-800: hsl(0, 0%, 20%, 1);
+   --clr-neutral-900: hsl(0, 0%, 10%, 1);
+
+   --clr-success: hsla(141, 73%, 48%, 1);
+   --clr-error: hsla(354, 85%, 58%, 1);
 }

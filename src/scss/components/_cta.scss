@@ -2,5 +2,27 @@
    position: absolute;
    top: 50%;
    left: 50%;
-   transform: translateY(-50%) translateX(-50%);
+   transform: translateY(-100%) translateX(-50%);
+   text-align: center;
+   color: var(--clr-primary-500);
+
+   &__title {
+      font-weight: 200;
+      margin-bottom: 1rem;
+
+      span {
+         display: block;
+         line-height: 1;
+      }
+
+      &--small {
+         font-size: 2.25rem;
+         text-transform: uppercase;
+      }
+
+      &--big {
+         font-size: 8rem;
+         text-transform: uppercase;
+      }
+   }
 }

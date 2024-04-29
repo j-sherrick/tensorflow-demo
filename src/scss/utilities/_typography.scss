@@ -1,0 +1,10 @@
+.uppercase {
+   text-transform: uppercase;
+}
+
+.text-gradient {
+   color: var(--clr-primary-400);
+   background: linear-gradient(to right, var(--clr-primary-400), var(--clr-secondary-500));
+   color: transparent;
+   background-clip: text;
+}

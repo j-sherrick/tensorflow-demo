@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" type="text/css" href="scss/styles.scss">
-      <title>Google AI for TypeScript Developers</title>
+      <title>TensorFlow Toy - Take photos online with TensorFlow-powered filter effects!</title>
    </head>
    <body>
       
@@ -16,30 +16,36 @@
       </header>
 
 
-      <section class="home">
-         <div class="cta">
-            <h1 class="cta__title">
+      <section class="home h-100 grid grid-place-center">
+
+         <div class="cta flex flex flex-column-center">
+
+            <h1 class="cta__title text-gradient">
                <span class="cta__title--small">TensorFlow</span>
-               <span class="cta__title--big">Toy</span>
+               <span class="cta__title--big uppercase">Toy</span>
             </h1>
-            <p class="cta__tagline">Take selfies with over 10 TensorFlow powered effects!</p>
+
+            <p class="cta__tagline text-gradient">Take&nbsp;selfies with over 10 TensorFlow&nbsp;powered&nbsp;effects!</p>
+
             <button class="cta__start">Ready? Get Started!</button>
+
+         </div>
+
+      </section>
+
+      <section class="enable h-100 grid grid-place-center removed">
+         <div class="enable__prompts text-gradient">
+            <p class="enable__prompt">Press the button to load&nbsp;the&nbsp;AI&nbsp;model and access your&nbsp;camera</p>
+            <p class="enable__prompt enable__prompt--error removed" id="try-again">Please try again!</p>
+            <p class="enable__prompt enable__prompt--error removed" id="fatal">Sorry, there was a problem.</p>
+            <p class="enable__prompt enable__prompt--error removed" id="incompatible">Sorry, TensorFlow Toy does not work in this web&nbsp;browser</p>
+            <p class="enable__prompt enable__prompt--access removed" id="access">Please allow access!</p>
+            <p class="enable__prompt enable__prompt--access removed" id="access-above">"Allow access from the menu&nbsp;above"</p>
+            <p class="enable__prompt enable__prompt--loading removed" id="loading">Loading...</p>
          </div>
       </section>
 
-      <section class="enable">
-         <div class="enable__prompts">
-            <p class="enable__prompt">Press the button to load&nbsp;the&nbsp;model and access your&nbsp;camera</p>
-            <p class="enable__prompt enable__prompt--error">Please try again!</p>
-            <p class="enable__prompt enable__prompt--access">Please allow access!</p>
-            <p class="enable__prompt enable__prompt--access-above">"Allow access from the menu&nbsp;above"</p>
-            <p class="enable__prompt enable__prompt--error-incapable">Sorry, TensorFlow Toy does not work in this web&nbsp;browser</p>
-            <p class="enable__prompt enable__prompt--error-fatal">Sorry, there was a problem.</p>
-            <p class="enable__prompt enable__prompt--loading">Loading...</p>
-         </div>
-      </section>
-
-      <main class="app">
+      <main class="app removed">
          <canvas class="overlay"></canvas>
          <video class="webcam" autoplay></video>
       </main>

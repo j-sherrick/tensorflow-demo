@@ -1,28 +1,39 @@
 .cta {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translateY(-100%) translateX(-50%);
-   text-align: center;
-   color: var(--clr-primary-500);
 
    &__title {
-      font-weight: 200;
       margin-bottom: 1rem;
 
       span {
          display: block;
          line-height: 1;
+         text-align: center;
       }
 
       &--small {
          font-size: 2.25rem;
-         text-transform: uppercase;
+         font-weight: 400;
+         letter-spacing: .25ch;
       }
 
       &--big {
          font-size: 8rem;
-         text-transform: uppercase;
+         font-weight: 600;
+         letter-spacing: .25ch;
       }
+   }
+
+   &__tagline {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+   }
+
+   &__start {
+      background: linear-gradient(to right, var(--clr-primary-400), var(--clr-secondary-500));
+      color: var(--clr-neutral-900);
+      font-size: 1.25rem;
+      font-weight: 600;
+      padding: .875em 1.25em;
+      border-radius: 0.5em;
    }
 }

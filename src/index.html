@@ -10,42 +10,40 @@
       
       <header>
          <a href="./index.html">
-            <span>TensorFlow</span>
-            <span>Toy</span>
+            <span class="text-gradient">TensorFlow Toy</span>
          </a>
       </header>
 
 
-      <section class="home h-100 grid grid-place-center">
+      <section class="home h-100 grid grid-place-center removed" id="app-home">
+         <div class="cta flex flex-column-center">
 
-         <div class="cta flex flex flex-column-center">
-
-            <h1 class="cta__title text-gradient">
+            <h1 class="cta__title">
                <span class="cta__title--small">TensorFlow</span>
                <span class="cta__title--big uppercase">Toy</span>
             </h1>
 
-            <p class="cta__tagline text-gradient">Take&nbsp;selfies with over 10 TensorFlow&nbsp;powered&nbsp;effects!</p>
+            <p class="cta__tagline">Take&nbsp;selfies with over 10 TensorFlow&nbsp;powered&nbsp;smart filters!</p>
 
-            <button class="cta__start">Ready? Get Started!</button>
+            <button class="cta__start start">Ready? Get Started!</button>
 
-         </div>
-
-      </section>
-
-      <section class="enable h-100 grid grid-place-center removed">
-         <div class="enable__prompts text-gradient">
-            <p class="enable__prompt">Press the button to load&nbsp;the&nbsp;AI&nbsp;model and access your&nbsp;camera</p>
-            <p class="enable__prompt enable__prompt--error removed" id="try-again">Please try again!</p>
-            <p class="enable__prompt enable__prompt--error removed" id="fatal">Sorry, there was a problem.</p>
-            <p class="enable__prompt enable__prompt--error removed" id="incompatible">Sorry, TensorFlow Toy does not work in this web&nbsp;browser</p>
-            <p class="enable__prompt enable__prompt--access removed" id="access">Please allow access!</p>
-            <p class="enable__prompt enable__prompt--access removed" id="access-above">"Allow access from the menu&nbsp;above"</p>
-            <p class="enable__prompt enable__prompt--loading removed" id="loading">Loading...</p>
          </div>
       </section>
 
-      <main class="app removed">
+      <section class="enable h-100 grid grid-place-center removed" id="app-enable">
+         <div class="enable__cam flex flex-column-center gap-2">
+            <div class="enable__prompts text-gradient" id="prompts">
+               <p class="enable__prompt" id="load">Press the button to load&nbsp;the&nbsp;model and access your&nbsp;camera</p>
+               <p class="enable__prompt enable__prompt--error removed" id="fatal">Sorry, there was a problem.</p>
+               <p class="enable__prompt enable__prompt--error removed" id="incompatible">Sorry,&nbsp;TensorFlow Toy does not work in this web&nbsp;browser</p>
+               <p class="enable__prompt enable__prompt--access removed" id="access">Please refresh the page and allow access!</p>
+               <p class="enable__prompt enable__prompt--loading removed" id="loading">Loading...</p>
+            </div>
+            <button class="enable__start start">Start the AI</button>
+         </div>
+      </section>
+
+      <main class="main removed" id="app-main">
          <canvas class="overlay"></canvas>
          <video class="webcam" autoplay></video>
       </main>

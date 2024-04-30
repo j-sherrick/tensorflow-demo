@@ -1,0 +1,11 @@
+button {
+
+   &.start {
+      background: linear-gradient(to right, var(--clr-primary-400), var(--clr-secondary-500));
+      color: var(--clr-neutral-100);
+      font-size: 1.25rem;
+      font-weight: 600;
+      padding: .875em 1.25em;
+      border-radius: 0.5em;
+   }
+}

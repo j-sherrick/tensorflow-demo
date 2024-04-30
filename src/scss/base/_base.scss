@@ -1,17 +1,10 @@
-/* Set base font size and line height */
-/* Set default font family and font weight */
-/* Set default background and text color and text alignment */
+/* BASE BODY STYLES */
+
 body {
-   background: var(--clr-neutral-600);
-   background: radial-gradient(
-      circle,
-    var(--clr-neutral-900) 80%,
-    var(--clr-primary-700) 100%
-   );
    font-size: 1rem;
    line-height: 1.5;
    font-family: 'Poppins', system-ui, sans-serif;
    font-weight: normal;
-   color: #2e2e2e;
-   min-height: 100vh;
+   color: var(--clr-neutral-800);
+   background-color: var(--clr-neutral-100);
 }

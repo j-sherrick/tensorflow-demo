@@ -1,3 +1,5 @@
+import '@tensorflow/tfjs-backend-webgl';
+
 interface Webcam {
    video: HTMLVideoElement | null;
    w?: number;

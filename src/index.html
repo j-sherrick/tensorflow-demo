@@ -30,10 +30,10 @@
          </div>
       </section>
 
-      <section class="enable h-100 grid grid-place-center removed" id="app-enable">
+      <section class="enable h-100 grid grid-place-center removed" id="app-init">
          <div class="enable__cam flex flex-column-center gap-2">
-            <div class="enable__prompts text-gradient" id="prompts">
-               <p class="enable__prompt" id="load">Press the button to load&nbsp;the&nbsp;model and access your&nbsp;camera</p>
+            <div class="enable__prompts" id="prompts">
+               <p class="enable__prompt" id="enable">Press the button to load&nbsp;the&nbsp;model and access your&nbsp;camera</p>
                <p class="enable__prompt enable__prompt--error removed" id="fatal">Sorry, there was a problem.</p>
                <p class="enable__prompt enable__prompt--error removed" id="incompatible">Sorry,&nbsp;TensorFlow Toy does not work in this web&nbsp;browser</p>
                <p class="enable__prompt enable__prompt--access removed" id="access">Please refresh the page and allow access!</p>
@@ -43,9 +43,17 @@
          </div>
       </section>
 
-      <main class="main removed" id="app-main">
-         <canvas class="overlay"></canvas>
-         <video class="webcam" autoplay></video>
+      <main class="app h-100 grid grid-place-center removed" id="app-main">
+         <div class="app__main">
+            <canvas class="app__overlay" id="overlay"></canvas>
+            <video class="app__video" id="webcam" autoplay></video>
+            <menu class="app__menu removed" id="menu">
+               <button class="app__menu-item" id="menu-close">Close</button>
+               <button class="app__menu-item" id="menu-snap">Snap</button>
+               <button class="app__menu-item" id="menu-filter">Filter</button>
+               <button class="app__menu-item" id="menu-reset">Reset</button>
+            </menu>
+         </div>
       </main>
       
       <footer>

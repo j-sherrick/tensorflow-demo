@@ -13,7 +13,8 @@
   },
   "keywords": [
     "tensorflow",
-    "object detection",
+    "face landmarks detection",
+    "face_mesh",
     "machine learning",
     "ai",
     "javascript",

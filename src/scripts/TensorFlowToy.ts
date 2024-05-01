@@ -7,27 +7,27 @@ interface Webcam {
 }
 
 export class TensorFlowToy {
-   sections: Array<HTMLElement> = [];
+   views: Array<HTMLElement> = [];
    webcam: Webcam = { video: null };
    canvas: HTMLCanvasElement;
    context: CanvasRenderingContext2D;
 
    constructor() {
-      // Get the app sections and make sure they exist
-      this.sections[0] = document.getElementById('app-home');
-      this.sections[1] = document.getElementById('app-init');
-      this.sections[2] = document.getElementById('app-main');
-      if (!this.sections[0] || !this.sections[1] || !this.sections[2]) {
-         throw new Error('App sections were missing from the DOM');
+      // Get the views and make sure they exist
+      this.views[0] = document.getElementById('app-home');
+      this.views[1] = document.getElementById('app-init');
+      this.views[2] = document.getElementById('app-main');
+      if (!this.views[0] || !this.views[1] || !this.views[2]) {
+         throw new Error('One or more <section> elements were missing from the DOM');
       }
 
       // Show the home section 'app-home' and set up the button event
-      this.sections[0].classList.toggle('removed');
-      this.sections[0].querySelector('button')
+      this.views[0].classList.toggle('removed');
+      this.views[0].querySelector('button')
          .addEventListener('click', this.displayEnableSection.bind(this));
 
       // Set up the button event for the enable webcam section 'app-enable'
-      this.sections[1].querySelector('button')
+      this.views[1].querySelector('button')
          .addEventListener('click', this.enableApp.bind(this));
 
       // Get the webcam and canvas elements
@@ -44,18 +44,18 @@ export class TensorFlowToy {
 
    private displayEnableSection(): void {
       // Tear down the 'app-home' section
-      this.sections[0].querySelector('button')
+      this.views[0].querySelector('button')
          .removeEventListener('click', this.displayEnableSection.bind(this));
-      this.sections[0].classList.toggle('removed');
+      this.views[0].classList.toggle('removed');
 
       // Display the 'app-enable' section
-      this.sections[1].classList.toggle('removed');
+      this.views[1].classList.toggle('removed');
    }
 
    private async enableApp(): Promise<void> {
       // Get the prompt and button elements so we can manipulate them later
       let prompt = document.getElementById('enable');
-      let button = this.sections[1].querySelector('button');
+      let button = this.views[1].querySelector('button');
 
       // Check if the browser supports getUserMedia
       if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
@@ -74,10 +74,10 @@ export class TensorFlowToy {
 
          // Tear down the 'app-enable' section
          button.removeEventListener('click', this.enableApp.bind(this));
-         this.sections[1].classList.toggle('removed');
+         this.views[1].classList.toggle('removed');
 
          // Display the main app section 'app-main' and set the webcam stream
-         this.sections[2].classList.toggle('removed');
+         this.views[2].classList.toggle('removed');
          this.webcam.video.srcObject = stream;
          this.webcam.video.onloadedmetadata = () => {
             this.webcam.w = this.webcam.video.videoWidth;

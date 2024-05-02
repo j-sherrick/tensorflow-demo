@@ -1,3 +1,3 @@
-import { TensorFlowToy } from "./TensorFlowToy.js";
+import { ViewManager } from "./controller/ViewManager.js";
 
-const toy = new TensorFlowToy();
+const controller = new ViewManager();

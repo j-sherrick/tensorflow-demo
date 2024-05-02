@@ -21,12 +21,12 @@ export class TensorFlowToy {
          throw new Error('One or more <section> elements were missing from the DOM');
       }
 
-      // Show the home section 'app-home' and set up the button event
+      // Show the home view and set up the button event
       this.views[0].classList.toggle('removed');
       this.views[0].querySelector('button')
          .addEventListener('click', this.displayEnableSection.bind(this));
 
-      // Set up the button event for the enable webcam section 'app-enable'
+      // Set up the button event for the enable view
       this.views[1].querySelector('button')
          .addEventListener('click', this.enableApp.bind(this));
 

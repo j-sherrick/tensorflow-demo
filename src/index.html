@@ -30,16 +30,13 @@
          </div>
       </section>
 
-      <section class="enable h-100 grid grid-place-center removed" id="app-init">
-         <div class="enable__cam flex flex-column-center gap-2">
-            <div class="enable__prompts" id="prompts">
-               <p class="enable__prompt" id="enable">Press the button to load&nbsp;the&nbsp;model and access your&nbsp;camera</p>
-               <p class="enable__prompt enable__prompt--error removed" id="fatal">Sorry, there was a problem.</p>
-               <p class="enable__prompt enable__prompt--error removed" id="incompatible">Sorry,&nbsp;TensorFlow Toy does not work in this web&nbsp;browser</p>
-               <p class="enable__prompt enable__prompt--access removed" id="access">Please refresh the page and allow access!</p>
-               <p class="enable__prompt enable__prompt--loading removed" id="loading">Loading...</p>
+      <section class="init h-100 grid grid-place-center removed" id="app-init">
+         <div class="init__cam flex flex-column-center gap-2">
+            <div class="init__prompts" id="prompts">
+               <h2 class="init__title text-gradient">Magical Filters Await!</h2>
             </div>
-            <button class="enable__start start">Start the AI</button>
+            <p class="init__prompt" id="prompt"></p>
+            <button class="init__start start">Start the AI</button>
          </div>
       </section>
 

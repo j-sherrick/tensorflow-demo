@@ -1,16 +1,16 @@
-import { HomeView } from "../views/HomeView.js";
-import { InitView } from "../views/InitView.js";
-import { AppView } from "../views/AppView.js";
+import { HomeView } from "../pageview/home.js";
+import { InitView } from "../pageview/init.js";
+import { MainView } from "../pageview/main.js";
 
 export class ViewManager {
    home: HomeView;
    init: InitView;
-   app: AppView;
+   app: MainView;
 
    constructor() {
       this.home = new HomeView();
       this.init = new InitView();
-      this.app = new AppView();
+      this.app = new MainView();
       this.home.button.addEventListener('click', () => {
          this.home.hide();
          this.init.show();

@@ -7,10 +7,6 @@
    box-sizing: border-box;
 }
 
-html {
-   font-size: 16px;
-}
-
 /* Remove default margin and padding */
 body,
 h1,
@@ -60,12 +56,11 @@ select {
    font-weight: inherit;
 }
 
-/* Make the default button behave like a link */
+/* Set the default button behavior */
 button {
    cursor: pointer;
    color: inherit;
    font-size: inherit;
-   font-weight: inherit;
    background-color: transparent;
    padding: 0;
 }

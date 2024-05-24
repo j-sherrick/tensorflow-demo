@@ -1,62 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" type="text/css" href="scss/styles.scss">
-      <title>TensorFlow Toy - Take photos online with TensorFlow-powered filter effects!</title>
-   </head>
-   <body>
-      
-      <header>
-         <a href="./index.html">
-            <span class="text-gradient">TensorFlow Toy</span>
-         </a>
-      </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="scss/styles.scss" />
+    <title>TensorFlow Toy - Take photos online with TensorFlow-powered filter effects!</title>
+  </head>
+  <body>
+    <header>
+      <a href="./index.html">
+        <span class="text-gradient">TensorFlow Toy</span>
+      </a>
+    </header>
 
+    <section class="home h-100 grid grid-place-center removed" id="app-home">
+      <div class="cta flex flex-column-center">
+        <h1 class="cta__title">
+          <span class="cta__title--small">TensorFlow</span>
+          <span class="cta__title--big uppercase">Toy</span>
+        </h1>
 
-      <section class="home h-100 grid grid-place-center removed" id="app-home">
-         <div class="cta flex flex-column-center">
+        <p class="cta__tagline">Take&nbsp;selfies with over 10 TensorFlow&nbsp;powered&nbsp;smart filters!</p>
 
-            <h1 class="cta__title">
-               <span class="cta__title--small">TensorFlow</span>
-               <span class="cta__title--big uppercase">Toy</span>
-            </h1>
+        <button class="cta__start start">Ready? Get Started!</button>
+      </div>
+    </section>
 
-            <p class="cta__tagline">Take&nbsp;selfies with over 10 TensorFlow&nbsp;powered&nbsp;smart filters!</p>
+    <section class="init h-100 grid grid-place-center removed" id="app-init">
+      <div class="init__cam flex flex-column-center gap-2">
+        <div class="init__prompts" id="prompts">
+          <h2 class="init__title text-gradient">Magical Filters Await!</h2>
+        </div>
+        <p class="init__prompt" id="prompt"></p>
+        <button class="init__start start">Start the AI</button>
+      </div>
+    </section>
 
-            <button class="cta__start start">Ready? Get Started!</button>
+    <main class="app h-100 grid grid-place-center removed" id="app-main">
+      <div class="app__main">
+        <canvas class="app__overlay" id="overlay"></canvas>
+        <video class="app__video" id="webcam" autoplay></video>
+        <menu class="app__menu removed" id="menu">
+          <button class="app__menu-item" id="menu-close">Close</button>
+          <button class="app__menu-item" id="menu-snap">Snap</button>
+          <button class="app__menu-item" id="menu-filter">Filter</button>
+          <button class="app__menu-item" id="menu-reset">Reset</button>
+        </menu>
+      </div>
+    </main>
 
-         </div>
-      </section>
+    <footer></footer>
 
-      <section class="init h-100 grid grid-place-center removed" id="app-init">
-         <div class="init__cam flex flex-column-center gap-2">
-            <div class="init__prompts" id="prompts">
-               <h2 class="init__title text-gradient">Magical Filters Await!</h2>
-            </div>
-            <p class="init__prompt" id="prompt"></p>
-            <button class="init__start start">Start the AI</button>
-         </div>
-      </section>
-
-      <main class="app h-100 grid grid-place-center removed" id="app-main">
-         <div class="app__main">
-            <canvas class="app__overlay" id="overlay"></canvas>
-            <video class="app__video" id="webcam" autoplay></video>
-            <menu class="app__menu removed" id="menu">
-               <button class="app__menu-item" id="menu-close">Close</button>
-               <button class="app__menu-item" id="menu-snap">Snap</button>
-               <button class="app__menu-item" id="menu-filter">Filter</button>
-               <button class="app__menu-item" id="menu-reset">Reset</button>
-            </menu>
-         </div>
-      </main>
-      
-      <footer>
-         
-      </footer>
-
-      <script type="module" src="scripts/index.ts"></script>
-   </body>
+    <script type="module" src="index.ts"></script>
+  </body>
 </html>

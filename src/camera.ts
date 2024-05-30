@@ -1,13 +1,3 @@
-import * as mp from '@mediapipe/face_mesh';
-import * as tf from '@tensorflow/tfjs-core';
-
-import '@tensorflow/tfjs-backend-webgl';
-import {
-  FaceLandmarksDetector,
-  SupportedModels,
-  createDetector
-} from '@tensorflow-models/face-landmarks-detection';
-
 interface Webcam {
   video: HTMLVideoElement | null;
   w?: number;
@@ -18,7 +8,6 @@ export class TensorCamera {
   webcam: Webcam = { video: null };
   canvas: HTMLCanvasElement;
   context: CanvasRenderingContext2D;
-  detector: FaceLandmarksDetector | null = null;
 
   constructor() {
     // Get the webcam and canvas elements
@@ -45,18 +34,10 @@ export class TensorCamera {
       this.canvas.width = this.webcam.w;
       this.canvas.height = this.webcam.h;
     };
+    this.drawBlackAndWhite();
   }
 
-  public async enableDetector(): Promise<void> {
-    this.detector = await createDetector(SupportedModels.MediaPipeFaceMesh, {
-      runtime: 'mediapipe',
-      maxFaces: 1,
-      solutionPath: '/node_modules/@mediapipe/face_mesh'
-    } as any);
-    if (!this.detector) {
-      throw new Error('Could not create face landmarks detector');
-    }
-  }
+  public async enableDetector(): Promise<void> {}
 
   public drawBlackAndWhite(): void {
     this.context.drawImage(this.webcam.video, 0, 0);

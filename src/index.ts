@@ -1,10 +1,10 @@
 import { View } from './view.js';
-import { TensorCamera } from './camera.js';
+import { CameraApp } from './camera.js';
 
 const home = new View('app-home');
 const init = new View('app-init');
 const main = new View('app-main');
-const tfToy = new TensorCamera();
+const tfToy = new CameraApp();
 
 function enableHomeView(): void {
   home.show();
@@ -17,7 +17,7 @@ function enableHomeView(): void {
 
 async function enableWebCam(): Promise<void> {
   try {
-    await tfToy.enableDetector();
+    await tfToy.enableApp();
     init.hide();
     main.show();
   } catch (e) {

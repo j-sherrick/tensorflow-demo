@@ -1,10 +1,14 @@
+/**
+ *
+ */
+
 interface Webcam {
   video: HTMLVideoElement | null;
   w?: number;
   h?: number;
 }
 
-export class TensorCamera {
+export class CameraApp {
   webcam: Webcam = { video: null };
   canvas: HTMLCanvasElement;
   context: CanvasRenderingContext2D;
